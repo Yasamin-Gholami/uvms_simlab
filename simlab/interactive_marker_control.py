@@ -195,6 +195,7 @@ class BasicControlsNode(Node):
         command_msg.pose.data = []
 
         for k, robot in enumerate(self.robots):
+            robot.write_data_to_file()
             state = robot.get_state()
             if state['status'] == 'active':
                 command_msg.acceleration.data.extend(robot.body_acc_command + robot.arm.ddq_command)
