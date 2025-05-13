@@ -39,13 +39,10 @@ setup(
             'coverage_node = simlab.dive_coverage:main',
             'pwm_test_node = simlab.pwm_test:main',
             'interactive_marker_node = simlab.interactive_marker_control:main',
-<<<<<<< Updated upstream
             'dof_controller = simlab.dof_control:main',
-=======
             'experimental_node = simlab.experimental_control:main',
             'move_node = simlab.move:main',
             'move2_node = simlab.movev2:main',
->>>>>>> Stashed changes
         ],
     },
 )
